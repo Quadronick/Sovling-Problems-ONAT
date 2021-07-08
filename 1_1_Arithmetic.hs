@@ -39,7 +39,6 @@ f12 t x = 7 * t**2 + 3 * sin x**3 + 9.2
 f13 :: Float -> Float
 f13 y = sqrt $ abs $ 3 * y**2 + 0.5 * y + 4
 
-
 f14 :: Float -> Float -> Float
 f14 x y = abs $ sqrt $ sin y**2 + 6.835 + exp x
 
