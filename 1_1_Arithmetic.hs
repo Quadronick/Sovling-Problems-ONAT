@@ -46,6 +46,50 @@ f14 x y = abs $ sqrt $ sin y**2 + 6.835 + exp x
 f15 :: Float -> Float
 f15 y = sin (y**2) - 2.8 * y + sqrt (abs y)
 
+f16 :: Float -> Float
+f16 y = sqrt $ cos(4*y)**2 + 7.151
+
+f17 :: Float -> Float
+f17 y = 3 * y**2 + sqrt (y + 1)
+
+f18 :: Float -> Float
+f18 y = 3 * y**2 + sqrt (y**3 + 1)
+
+f19 :: Float -> Float -> Float -> Float
+f19 g n y = (y**3 + 1.09*g)**(1/n)
+
+f20 :: Float -> Float -> Float -> Float
+f20 k x y = exp (k+y) + tan x * sqrt y
+
+f21 :: Float -> Float -> Float
+f21 h y = exp (y + 5.5) + 9.1 * h**3
+
+f22 :: Float -> Float -> Float -> Float
+f22 u x y = sin(2*u) * log (2*y**2 + sqrt x)
+
+f23 :: Float -> Float -> Float
+f23 f y = exp 2*y + sin f
+
+f24 :: Float -> Float
+f24 y = 2 * sin (0.214 * y**5 +1)
+
+f25 :: Float -> Float -> Float
+f25 f y = exp 2*y + sin(f**2)
+
+f26 :: Float -> Float
+f26 p = sin(p**2 + 0.4)**3
+
+f27 :: Float -> Float -> Float -> Float
+f27 v x y = 1.03 * v + exp (2*y) + tan (abs x)
+
+f28 :: Float -> Float -> Float
+f28 h y = exp (y + h) + sqrt (abs $ 6.4 * y)
+
+f29 :: Float -> Float
+f29 y = 3 * y**2 + sqrt(abs $ y + 1)
+
+f30 :: Float -> Float -> Float
+f30 r y = exp (y + r) + 7.2 * sin r
 
 main :: IO()
 main = do
