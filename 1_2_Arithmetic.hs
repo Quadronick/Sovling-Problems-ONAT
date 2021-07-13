@@ -21,6 +21,30 @@ f06 i y = (0.81 * cos i)/(log y + 2 * i**3)
 f07 :: Float -> Float -> Float
 f07 m y = (m**2 + 2.8 * m + 0.355)/(cos 2*y + 3.6)
 
+f08 :: Float -> Float -> Float
+f08 t y = (2.37 * sin(t + 1))/sqrt(4 * y**2 - 0.1 * y +5)
+
+f09 :: Float -> Float -> Float
+f09 w y = ((y + 2 * w)**3)/log (y + 0.75)
+
+f10 :: Float -> Float -> Float
+f10 t y = (2 * t + y * cos t)/sqrt (y + 4.831)
+
+f11 :: Float -> Float -> Float
+f11 n y = y**2 + (0.5 * n + 4.8)/sin y
+
+f12 :: Float -> Float -> Float
+f12 t y = (sin (2 * t + 1)**2 + 0.3)/log (t + y)
+
+f13 :: Float -> Float -> Float
+f13 h y = (sin (2 * y + h) + h**3)/(exp h + y)
+
+f14 :: Float -> Float -> Float
+f14 h y = (exp (y + 2.5) + 7.1 * h**3)/log (sqrt (y + 0.04 * h))
+
+f15 :: Float -> Float -> Float
+f15 j y = 2 * sin (0.345 * y + 1)/log (y + 2 *j)
+
 main :: IO()
 main = do
   print "Pls input arguments to perform calculations."
