@@ -3,8 +3,8 @@ module Main where
 f1 :: Float -> Float -> Float
 f1 l t = 3 * t**2 + 3 * l**5 + 4.9
 
-f2 :: Float -> Float -> Float -> Float
-f2 e p y = log (p**2 + y**3) + exp p
+f2 :: Float -> Float -> Float
+f2 p y = log (p**2 + y**3) + exp p
 
 f3 :: Float -> Float -> Float
 f3 n y = n * (y + 3.5) + sqrt y
