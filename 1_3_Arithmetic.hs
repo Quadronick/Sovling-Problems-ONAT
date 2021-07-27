@@ -37,12 +37,28 @@ f11 x y = (2.33 * log (sqrt (1 + cos y ** 2))) / (exp y + sin x ** 2)
 f12 :: Float -> Float -> Float -> Float
 f12 a x y = (cos (abs (y + x)) ** 3 - x - y) / atan ((x + a) * x**5) ** 4
 
+f13 :: Float -> Float -> Float -> Float
+f13 a b x = a / (x - a) + (b**x + cos x ** 3) / log a ** 3 + 4.5
 
+f14 :: Float -> Float
+f14 x = (sin ((x**2 + 4) ** 3) + 4.5) / sin (x**4) ** 3
 
+f15 :: Float -> Float -> Float
+f15 m y = (m**2 + 2.8 * m + 0.355) / (cos 2*y + 3.6)
+
+f16 :: Float -> Float -> Float -> Float
+f16 t x y = (sin x ** 3 + log (2 * y + 3 * x)) / t ** e + sqrt x where
+  e = exp 1
+
+f17 :: Float -> Float -> Float -> Float -> Float
+f17 a b x y = (sqrt (x + b - a) + log y) / atan (a + b)
+
+f18 :: Float -> Float -> Float
+f18 t y = (4.351 * y**3 + 2 * t * log t) / sqrt (cos (2 * y) + 4.351)
 
 main :: IO()
 main = do
-  print "Please enter two float numbers"
+  print "Please enter three float numbers"
   input1 <- getLine
   input2 <- getLine
   input3 <- getLine
