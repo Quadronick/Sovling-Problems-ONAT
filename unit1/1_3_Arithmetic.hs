@@ -57,7 +57,7 @@ f18 :: Float -> Float -> Float
 f18 t y = (4.351 * y**3 + 2 * t * log t) / sqrt (cos (2 * y) + 4.351)
 
 f19 :: Float -> Float -> Float -> Float -> Float -> Float -> Float
-f19 a b k r x y = (k**(-a * r *x) - a * sqrt 6 - cos (3 * a * b) / sin (a * asin x + log y) ** 2)
+f19 a b k r x y = (k**(-a * r *x) - a * sqrt 6 - cos (3 * a * b)) / sin (a * asin x + log y) ** 2
 
 f20 :: Float -> Float -> Float -> Float -> Float -> Float
 f20 a b c x y = (tan y ** 3 + sin (x * sqrt (b - c) ** 5)) / sqrt (a - b + c)
