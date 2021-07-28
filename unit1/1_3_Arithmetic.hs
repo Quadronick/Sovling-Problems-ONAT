@@ -56,6 +56,43 @@ f17 a b x y = (sqrt (x + b - a) + log y) / atan (a + b)
 f18 :: Float -> Float -> Float
 f18 t y = (4.351 * y**3 + 2 * t * log t) / sqrt (cos (2 * y) + 4.351)
 
+f19 :: Float -> Float -> Float -> Float -> Float -> Float -> Float
+f19 a b k r x y = (k**(-a * r *x) - a * sqrt 6 - cos (3 * a * b) / sin (a * asin x + log y) ** 2)
+
+f20 :: Float -> Float -> Float -> Float -> Float -> Float
+f20 a b c x y = (tan y ** 3 + sin (x * sqrt (b - c) ** 5)) / sqrt (a - b + c)
+
+f21 :: Float -> Float -> Float -> Float
+f21 a z x = ((z + sqrt (z * x)) ** 0.2) / exp x + a**5 * atan x
+
+f22 :: Float -> Float -> Float
+f22 x y = cos (x**2 + 2) + (3.5 * x**2 + 1) / cos y ** 2
+
+f23 :: Float -> Float -> Float -> Float -> Float
+f23 a b x z = sqrt (abs x + cos x ** 3 + z**4) / (log x - asin (b * x - a))
+
+f24 :: Float -> Float -> Float -> Float -> Float
+f24 a b x z = (cos (b * x)**7 - (sin (a**2) + acos (x**3 + z**5 - a**2))) / (asin(a**2) + acos(x**7 - a**2))
+
+f25 :: Float -> Float -> Float -> Float
+f25 a x y = (cotan (a**3) ** 3 + atan a ** 2) / sqrt (y**(tan x)) where
+  cotan rad = 1 / tan rad
+
+f26 :: Float -> Float -> Float -> Float
+f26 k x y = (log (x**3 + y) - y**4) / (exp y + 5.4 * k**3)
+
+f27 :: Float -> Float -> Float -> Float -> Float
+f27 a c x y = (a**5 + acos (a + x**3) - sin (y - c) ** 4 ) / (sin (x + y) ** 3 + abs (x - y))
+
+f28 :: Float -> Float -> Float -> Float -> Float
+f28 c x y z = (tan (x**4 + 6) - cos (z + x**3 * y) ** (3*x)) / cos (x**3 * c**2) ** 2
+
+f29 :: Float -> Float -> Float -> Float
+f29 d x y = (cos y ** 2 + 2.4 * d) / exp y + log (sin x **2 + 6)
+
+f30 :: Float -> Float
+f30 x = sqrt ((3 + x)**6 - log x) / exp 0 + asin (6 * x**2)
+
 main :: IO()
 main = do
   print "Please enter three float numbers"
