@@ -14,7 +14,7 @@ fmul a b = a * b
 
 main :: IO()
 main = do
-  print "This program perform four basic operations on two numbers"
+  print "This program performs four basic operations on two numbers"
   print "Pls enter two numbers to begin"
   input1 <- getLine
   input2 <- getLine

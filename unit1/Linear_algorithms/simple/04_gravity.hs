@@ -5,7 +5,7 @@ grav m1 m2 r = gamma * m1 * m2 / r**2 where gamma = 6.67 * 10**(-11)
 
 main :: IO()
 main = do
-  print "This program calculate gravitational pull force"
+  print "This program calculates gravitational pull force"
   print "Please enter mass of the first object (kg)"
   input1 <- getLine
   print "Please enter mass of the second object (kg)"

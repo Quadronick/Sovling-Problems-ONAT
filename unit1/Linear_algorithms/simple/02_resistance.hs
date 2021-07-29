@@ -5,7 +5,7 @@ resist c l r = sqrt (r**2 + (w * l - 1 / (w * c))**2) where w = 0.2
 
 main :: IO()
 main = do
-  print "This program calculate full resistance of electric circuit..."
+  print "This program calculates full resistance of electric circuit..."
   print "Please enter active resistance value"
   input1 <- getLine
   print "Please enter capacity value..."
