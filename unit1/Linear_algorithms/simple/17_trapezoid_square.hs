@@ -11,4 +11,8 @@ main = do
   print "Pls enter another base (cm)"
   input2 <- getLine
   print "Pls enter an angle (rad)"
+  input3 <- getLine
+  let a = read input1 :: Float
+  let b = read input2 :: Float
+  let alpha = read input3 :: Float
   putStrLn $ "Square S = " ++ show (sq a b alpha) ++ " cm^3."
