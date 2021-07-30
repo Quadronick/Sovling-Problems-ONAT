@@ -8,7 +8,7 @@ geomemean a b = sqrt ( abs a * abs b )
 
 main :: IO()
 main = do
-  print "This program calculate (a**3 + b**3) / 2"
+  print "This program calculates (a**3 + b**3) / 2"
   print "and sqrt ( abs a * abs b ) for literally no reason"
   print "Pls enter A"
   input1 <- getLine
