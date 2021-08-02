@@ -1,7 +1,9 @@
 module Main where
 
 equ :: Float -> Float -> Float
-equ a b = a + b
+equ p t = tan (x**2) ** 3 + k * t where
+  x = p * t**2 + sqrt k
+  k = sqrt (p *t)
 
 main :: IO()
 main = do
@@ -10,6 +12,6 @@ main = do
   input1 <- getLine
   print "Pls enter B"
   input2 <- getLine
-  let a = read input1 :: Float
-  let b = read input2 :: Float
-  putStrLn $ "The value of the function is " ++ show (equ a b)
+  let p = read input1 :: Float
+  let t = read input2 :: Float
+  putStrLn $ "The value of the function is " ++ show (equ p t)

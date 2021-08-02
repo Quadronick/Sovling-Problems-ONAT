@@ -1,7 +1,9 @@
 module Main where
 
 equ :: Float -> Float -> Float
-equ a b = a + b
+equ k x = log a**3 + cos x ** 5 where
+  a = c**4 + k**3
+  c = sqrt (abs x)
 
 main :: IO()
 main = do
@@ -10,6 +12,6 @@ main = do
   input1 <- getLine
   print "Pls enter B"
   input2 <- getLine
-  let a = read input1 :: Float
-  let b = read input2 :: Float
-  putStrLn $ "The value of the function is " ++ show (equ a b)
+  let k = read input1 :: Float
+  let x = read input2 :: Float
+  putStrLn $ "The value of the function is " ++ show (equ k x)

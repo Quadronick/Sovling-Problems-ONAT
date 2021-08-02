@@ -1,7 +1,9 @@
 module Main where
 
 equ :: Float -> Float -> Float
-equ a b = a + b
+equ k m = (x**2 + c**2) ** (1/3) where
+  x = exp (m * k)
+  c = cos m ** 2 + k**2
 
 main :: IO()
 main = do
@@ -10,6 +12,6 @@ main = do
   input1 <- getLine
   print "Pls enter B"
   input2 <- getLine
-  let a = read input1 :: Float
-  let b = read input2 :: Float
-  putStrLn $ "The value of the function is " ++ show (equ a b)
+  let k = read input1 :: Float
+  let m = read input2 :: Float
+  putStrLn $ "The value of the function is " ++ show (equ k m)
