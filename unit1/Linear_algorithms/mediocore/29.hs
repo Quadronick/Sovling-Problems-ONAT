@@ -1,7 +1,9 @@
 module Main where
 
 equ :: Float -> Float -> Float
-equ a b = a + b
+equ a b = log (abs p) ** 3 + x where
+  p = x * (a + b**3)
+  x = exp (2 * a) + sqrt b
 
 main :: IO()
 main = do
