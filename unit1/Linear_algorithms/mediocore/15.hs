@@ -1,7 +1,9 @@
 module Main where
 
 equ :: Float -> Float -> Float
-equ a b = a + b
+equ a p = cos x ** 3 + abs a where
+  x = exp b
+  b = abs a + sqrt (a + p**2)
 
 main :: IO()
 main = do
@@ -11,5 +13,5 @@ main = do
   print "Pls enter B"
   input2 <- getLine
   let a = read input1 :: Float
-  let b = read input2 :: Float
-  putStrLn $ "The value of the function is " ++ show (equ a b)
+  let p = read input2 :: Float
+  putStrLn $ "The value of the function is " ++ show (equ a p)

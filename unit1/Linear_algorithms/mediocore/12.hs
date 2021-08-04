@@ -1,7 +1,9 @@
 module Main where
 
 equ :: Float -> Float -> Float
-equ a b = a + b
+equ b q = atan (abs x) ** 2 where
+  x = t**3 + b**3
+  t = b**3 + exp (sqrt q)
 
 main :: IO()
 main = do
@@ -10,6 +12,6 @@ main = do
   input1 <- getLine
   print "Pls enter B"
   input2 <- getLine
-  let a = read input1 :: Float
-  let b = read input2 :: Float
-  putStrLn $ "The value of the function is " ++ show (equ a b)
+  let b = read input1 :: Float
+  let q = read input2 :: Float
+  putStrLn $ "The value of the function is " ++ show (equ b q)
